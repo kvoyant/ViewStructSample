@@ -36,6 +36,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Pi-Vk-k7J"/>
+                    <connections>
+                        <segue destination="N1t-yt-LTO" kind="show" identifier="toSecondVC" id="TP2-xS-ffb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

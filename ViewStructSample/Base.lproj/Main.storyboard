@@ -29,7 +29,7 @@
                                 <rect key="frame" x="45" y="263" width="325" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="두번째화면으로 Seque"/>
+                                <state key="normal" title="두번째화면으로 Segue"/>
                                 <connections>
                                     <segue destination="N1t-yt-LTO" kind="show" identifier="toSecondVC" id="xjb-rY-Mre"/>
                                 </connections>

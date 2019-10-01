@@ -11,4 +11,8 @@ class SecondViewController: UIViewController {
             print("data:\(newData)")
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("back")
+    }
 }

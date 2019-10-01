@@ -6,5 +6,9 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let newData = data {
+            print("data:\(newData)")
+        }
     }
 }

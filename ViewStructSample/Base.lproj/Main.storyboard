@@ -30,15 +30,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="두번째화면으로 Seque"/>
+                                <connections>
+                                    <segue destination="N1t-yt-LTO" kind="show" identifier="toSecondVC" id="xjb-rY-Mre"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Pi-Vk-k7J"/>
-                    <connections>
-                        <segue destination="N1t-yt-LTO" kind="show" identifier="toSecondVC" id="TP2-xS-ffb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

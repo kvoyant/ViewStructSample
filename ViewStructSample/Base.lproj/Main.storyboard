@@ -43,6 +43,15 @@
                                     <action selector="onBtnThird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIp-t8-Ube"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgD-4N-Gro">
+                                <rect key="frame" x="75" y="514" width="265" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="탭바 컨트롤러 호출"/>
+                                <connections>
+                                    <segue destination="BZG-87-GAa" kind="show" id="Ud7-p9-JtP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,6 +85,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsQ-wL-3M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1287" y="135"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jGe-ud-yMo">
+            <objects>
+                <viewController id="x3d-GX-bjr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lx2-NA-RbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="탭바 검색뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjO-Z5-vu3">
+                                <rect key="frame" x="98" y="140" width="218" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="klH-2a-W8n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BX0-LQ-1I4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nw7-uz-MSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="1507"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="qpP-Fw-kDd">
@@ -127,6 +161,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fab-Rk-0Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-171.01449275362319" y="134.59821428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="31C-fP-x7P">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BZG-87-GAa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e71-vI-wPN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x3d-GX-bjr" kind="relationship" relationship="viewControllers" id="4wa-EA-pLw"/>
+                        <segue destination="naV-1L-VIu" kind="relationship" relationship="viewControllers" id="qoI-LN-ybF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cP-hh-apm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="813"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="BNO-Nd-W6z">
+            <objects>
+                <viewController id="naV-1L-VIu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ndr-mV-bnY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="탭바 홈뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0A-Me-5MQ">
+                                <rect key="frame" x="119" y="136" width="177" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JhD-Vo-FLA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lZa-fp-pwR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug3-vu-H9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1508"/>
         </scene>
     </scenes>
 </document>

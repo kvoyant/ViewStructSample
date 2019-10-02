@@ -15,5 +15,10 @@ class MainViewController: UIViewController {
         }
     }
 
+    @IBAction func onBtnThird(_ sender: Any) {
+        let newVC: ThirdViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThirdVC") as! ThirdViewController
+        newVC.data = "안녕하세요 push"
+        self.navigationController?.pushViewController(newVC, animated: true)
+    }
 }
 

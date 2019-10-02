@@ -12,4 +12,7 @@ class ThirdViewController: UIViewController {
         }
     }
     
+    @IBAction func onBtnBack(_ sender: Any) {
+//        self.navigationController?.popViewController(animated: true)
+    }
 }
